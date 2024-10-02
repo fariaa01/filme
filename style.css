@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.linha {
+    border-top: 8px solid rgb(255, 0, 0);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.content, .content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.imagem-container, .imagem-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.imagem, .imagem-2 {
+    height:300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.titulo-imagem, .titulo-imagem-2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.subtitulo, .subtitulo-2 {
+    font-size: 18px;
+    color: #555;
+    margin: 0 20px;
+    width: 20%;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .imagem, .imagem-2 {
+        height: 200px; /* Altura menor para dispositivos móveis */
+        width: 100%; /* Largura total para dispositivos móveis */
+        max-width: 300px; /* Mantém o tamanho máximo */
+    }
+
+    .titulo-imagem, .titulo-imagem-2 {
+        font-size: 24px; /* Tamanho do título menor */
+    }
+
+    .subtitulo, .subtitulo-2 {
+        font-size: 16px; /* Tamanho do subtítulo menor */
+        width: 90%; /* Largura maior em dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-imagem, .titulo-imagem-2 {
+        font-size: 20px; /* Tamanho ainda menor para telas muito pequenas */
+    }
+
+    .subtitulo, .subtitulo-2 {
+        font-size: 14px; /* Tamanho do subtítulo ainda menor */
+    }
+}
